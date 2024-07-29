@@ -479,5 +479,11 @@ namespace SuperAdventure
         {
             _player.CurrentWeapon = (Weapon)cboWeapons.SelectedItem;
         }
+        private void btnTrade_Click(object sender, EventArgs e)
+        {
+            TradingScreen tradingScreen = new TradingScreen();
+            tradingScreen.StartPosition = FormStartPosition.CenterParent;
+            tradingScreen.ShowDialog(this);
+        }
     }
 }

@@ -46,6 +46,7 @@ namespace SuperAdventure
             this.btnSouth = new System.Windows.Forms.Button();
             this.btnEast = new System.Windows.Forms.Button();
             this.btnWest = new System.Windows.Forms.Button();
+            this.btnTrade = new System.Windows.Forms.Button();
             this.rtbLocation = new System.Windows.Forms.RichTextBox();
             this.rtbMessages = new System.Windows.Forms.RichTextBox();
             this.dgvInventory = new System.Windows.Forms.DataGridView();
@@ -207,6 +208,16 @@ namespace SuperAdventure
             this.btnWest.UseVisualStyleBackColor = true;
             this.btnWest.Click += new System.EventHandler(this.btnWest_Click);
             // 
+            // btnTrade
+            // 
+            this.btnTrade.Location = new System.Drawing.Point(1316, 482);
+            this.btnTrade.Name = "btnTrade";
+            this.btnTrade.Size = new System.Drawing.Size(75, 28);
+            this.btnTrade.TabIndex = 21;
+            this.btnTrade.Text = "Trade";
+            this.btnTrade.UseVisualStyleBackColor = true;
+            this.btnTrade.Click += new System.EventHandler(this.btnTrade_Click);
+            // 
             // rtbLocation
             // 
             this.rtbLocation.Location = new System.Drawing.Point(537, 19);
@@ -258,6 +269,7 @@ namespace SuperAdventure
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1410, 718);
             this.Controls.Add(this.dgvQuests);
+            this.Controls.Add(this.btnTrade);
             this.Controls.Add(this.dgvInventory);
             this.Controls.Add(this.rtbMessages);
             this.Controls.Add(this.rtbLocation);
@@ -310,6 +322,7 @@ namespace SuperAdventure
         private System.Windows.Forms.RichTextBox rtbMessages;
         private System.Windows.Forms.DataGridView dgvInventory;
         private System.Windows.Forms.DataGridView dgvQuests;
+        private System.Windows.Forms.Button btnTrade;
     }
 }
 
